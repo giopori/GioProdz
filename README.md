@@ -1,6 +1,6 @@
 # GioProdz — Chicago Sports Photography
 
-One-page site for GioProdz, built on the HorizonX NOVARA Creative Studio template. Static HTML, CSS and JavaScript: no build step.
+One-page site for GioProdz. Plain HTML, CSS and a small script in `index.html`: no build step and no libraries.
 
 ## Preview it
 
@@ -9,13 +9,14 @@ One-page site for GioProdz, built on the HorizonX NOVARA Creative Studio templat
 
 ## Put it online
 
-Upload `index.html` and the whole `assets/` folder to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages).
+Upload `index.html` and the whole `assets/` folder to any static host.
 
 ## Edit it
 
-- **Text, photos, services:** everything is in `index.html`. The services slider content is the `quotes` list in the script near the bottom.
-- **Hero spiral:** the photo list is the `"images"` array in the Spiral Flux config near the bottom of `index.html` (20 photos max). Update the matching `<img>` tags inside `.sf-fallback` too.
-- **Photos:** files live in `assets/`. Gallery cards are the `<figure class="wcard">` blocks; add or remove a block to add or remove a photo.
-- **Contact details:** search `index.html` for `giopori@icloud.com` and `8722256752`.
+- **Text, services, contact details:** all in `index.html`.
+- **Photos:** each photo in `assets/` has a full-size file and a smaller `-sm` copy (720px wide) used in the hero wall and the grid. The full-size file opens in the photo viewer.
+- **Gallery:** the `<button class="card">` blocks inside `.grid`. Add or remove a block to add or remove a photo.
+- **Hero photo wall:** the `<div class="wall-col">` blocks. Each column lists its photos twice so the drift loops without a jump.
 - **Colors and fonts:** the `:root` block at the top of the `<style>` section.
 
+See `CREDITS.md` for licenses.
